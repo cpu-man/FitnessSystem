@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:FitnessProgram"
         mc:Ignorable="d"
         Title="NextWindow" Height="450" Width="800">
+    
     <Grid Background="Black">
 
         <!-- Grid row layout -->
