@@ -45,6 +45,8 @@ C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-wi
 C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\FitnessProgram.pdb
 C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\FitnessProgram.genruntimeconfig.cache
 C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\ref\FitnessProgram.dll
+C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.g.cs
+C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.baml
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\bin\Debug\net8.0-windows\FitnessProgram.exe
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\bin\Debug\net8.0-windows\FitnessProgram.deps.json
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\bin\Debug\net8.0-windows\FitnessProgram.runtimeconfig.json
@@ -52,12 +54,14 @@ C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\bin\Debug\net8.0-window
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\bin\Debug\net8.0-windows\FitnessProgram.pdb
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.g.cs
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberWindow.g.cs
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\NextWindow.g.cs
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\TestWindow.g.cs
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\FitnessProgram_MarkupCompile.cache
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\FitnessProgram_MarkupCompile.lref
+C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.baml
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberWindow.baml
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\NextWindow.baml
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\TestWindow.baml
@@ -72,7 +76,3 @@ C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-window
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\FitnessProgram.pdb
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\FitnessProgram.genruntimeconfig.cache
 C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\ref\FitnessProgram.dll
-C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.g.cs
-C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.baml
-C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.g.cs
-C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\MemberTestWindow.baml

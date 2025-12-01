@@ -21,6 +21,7 @@ namespace FitnessProgram
     /// </summary>
     public partial class ActivityWindow : Window
     {
+        Fitness fitness = new Fitness();
         public ActivityWindow()
         {
             InitializeComponent();
@@ -32,7 +33,6 @@ namespace FitnessProgram
             string filePath = @"ActivityList.txt";
             string fileContent = File.ReadAllText(filePath);
             ActivityBlock.Text = fileContent;
-            
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

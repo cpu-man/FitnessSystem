@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="ActivityWindow" Height="450" Width="800">
     <Grid Background="Black">
-        <TextBlock x:Name="ActivityBlock" Foreground="White" FontSize="20" HorizontalAlignment="Center" Margin="1,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+        <TextBlock x:Name="ActivityBlock" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="277,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+        <TextBlock x:Name="AmmountBlock" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="462,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+
         <Label 
         Grid.Row="0"
         Content="Aktiviteter" 
