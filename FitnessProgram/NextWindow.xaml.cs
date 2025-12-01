@@ -24,7 +24,7 @@ namespace FitnessProgram
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void GoToMembers_Click(object sender, RoutedEventArgs e)
         {
             MemberWindow member = new MemberWindow();
             member.Show();
@@ -42,8 +42,9 @@ namespace FitnessProgram
 
         private void GoToActivity_Click(object sender, RoutedEventArgs e)
         {
-            MemberTestWindow test = new MemberTestWindow();
-            test.Show();
+            ActivityWindow activity = new ActivityWindow();
+            activity.Show();
+            this.Close();
         }
     }
 }

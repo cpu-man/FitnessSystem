@@ -51,8 +51,8 @@ namespace FitnessProgram
                 if (member != null) //Hvis den får et matchene id, kører denne del
                 {
                     fitness.GetAllMembers().Remove(member); //Fjerner medlemmen
-                    MessageBox.Show($"{memberID} slettet!"); //Besked til brugeren
                     ShowMembers(); //Genindlæser listen
+                    MessageBox.Show($"{memberID} slettet!"); //Besked til brugeren
                 }
                 else
                 {

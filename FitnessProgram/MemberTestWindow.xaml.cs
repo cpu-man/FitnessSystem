@@ -19,9 +19,9 @@ namespace FitnessProgram
     /// <summary>
     /// Interaction logic for MemberTestWindow.xaml
     /// </summary>
-    public partial class MemberTestWindow : Window
+    public partial class ActivityWindow : Window
     {
-        public MemberTestWindow()
+        public ActivityWindow()
         {
             InitializeComponent();
             ShowActivity();
@@ -32,7 +32,14 @@ namespace FitnessProgram
             string filePath = @"ActivityList.txt";
             string fileContent = File.ReadAllText(filePath);
             ActivityBlock.Text = fileContent;
+            
         }
 
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            NextWindow next = new NextWindow();
+            next.Show();
+            this.Close();
+        }
     }
 }
