@@ -63,6 +63,13 @@ namespace FitnessProgram
             return newMember;
         }
 
+        public void CreateActivity()
+        {
+            ActivityWindow activity = new ActivityWindow();
+            
+        }
+
+
         public void ActivityMemberCount()
         {
             activityMembers["Yoga"] = new List<Member> { memberList[0], memberList[1] }; 

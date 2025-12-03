@@ -45,5 +45,17 @@ namespace FitnessProgram
                 Boxing.Text = fileText[1];
             }*/
         }
+
+ 
+        public void RemoveActivity()
+        {
+           if(
+               
+        }
+
+        private void DeleteActivityButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

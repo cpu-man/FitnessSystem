@@ -13,6 +13,9 @@
         <TextBlock x:Name="Spinning" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="322,134,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBlock x:Name="Pilates" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="430,134,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBlock x:Name="Crossfit" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="531,131,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox   x:Name="EnterActivity"  HorizontalAlignment="Left" Margin="670,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button    x:Name="DeleteActivityButton" Foreground="White" Background="Red" Content="Slet" HorizontalAlignment="Left" Margin="718,240,0,0" VerticalAlignment="Top" Click="DeleteActivityButton_Click"/>
+
 
     </Grid>
 </Window>
