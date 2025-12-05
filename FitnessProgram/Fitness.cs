@@ -56,6 +56,8 @@ public class Fitness
         return newMember;
     }
 
+    // SIDNEY MEMBER FILE
+
     public List<string> MemberFromFile()
     {
         string filePath = @"MemberList.txt";
@@ -69,4 +71,6 @@ public class Fitness
         string[] activities = File.ReadAllLines(filePath);
         return new List<string>(activities);
     }
+
+    // SIDNEY MEMBER FILE
 }
