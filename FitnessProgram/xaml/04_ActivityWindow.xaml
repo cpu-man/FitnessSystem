@@ -29,7 +29,7 @@
         <TextBox   x:Name="EnterActivity" Grid.Row="1"  HorizontalAlignment="Left" Margin="1297,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="4.667,-0.805"/>
         <Button    x:Name="DeleteMemberButton" Grid.Row="1" Height="35" Width="50" Foreground="White" Background="Red" Content="Slet" HorizontalAlignment="Left" Margin="1274,216,0,0" VerticalAlignment="Top" Click="DeleteActivityButton_Click"/>
         <Button x:Name="AddMemberButton" Grid.Row="1" Height="35" Width="50" Content="Tilføj" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="1393,216,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="CreateActivity" Grid.Row="1" Height="34" Width="100" Background="GreenYellow" Content="Opret Aktivitet" HorizontalAlignment="Left" Margin="1307,269,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CreateActivity" Grid.Row="1" Click="CreateActivity_Click" Height="34" Width="100" Background="GreenYellow" Content="Opret Aktivitet" HorizontalAlignment="Left" Margin="1307,269,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="EnterMember" HorizontalAlignment="Left" Grid.Row="1"  Margin="1297,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="NewActivity" HorizontalAlignment="Left" Margin="1297,317,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <!-- Sidney xaml code -->

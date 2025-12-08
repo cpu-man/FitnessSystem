@@ -157,6 +157,7 @@ namespace FitnessProgram
                 // Hide user buttons
                 JoinButton.Visibility = Visibility.Collapsed;
                 LeaveButton.Visibility = Visibility.Collapsed;
+                TypeActivityIn.Visibility = Visibility.Collapsed;
             }
             else
             {
@@ -166,6 +167,7 @@ namespace FitnessProgram
                 CreateActivity.Visibility = Visibility.Collapsed;
                 EnterActivity.Visibility = Visibility.Collapsed;
                 EnterMember.Visibility = Visibility.Collapsed;
+                NewActivity.Visibility = Visibility.Collapsed;
 
                 // Show user buttons
                 JoinButton.Visibility = Visibility.Visible;
@@ -307,12 +309,14 @@ namespace FitnessProgram
             block.FontWeight = FontWeights.Bold;
             block.HorizontalAlignment = HorizontalAlignment.Left;
             block.VerticalAlignment = VerticalAlignment.Top;
-            block.Margin = new Thickness(1002, 130, 0, 0);
+            block.Margin = new Thickness(1100, 130, 0, 0);
             block.TextWrapping = TextWrapping.Wrap;
 
             block.Text = newActName.ToUpper(); //Brugerens input bliver lagt ind i TextBlocken
             ActivityGrid.Children.Add(block);
             MessageBox.Show($"Aktivitet {newActName} oprettet");
+
+            UpdateAllCapacities();
         }
     }
 }
