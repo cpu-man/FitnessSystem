@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.IO;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -38,8 +39,17 @@ namespace FitnessProgram
             }
 
             Member newMember = _fitness.Register(name, gender, age);
+            SaveMemberToFile(newMember); //Kalder på metoden
             MessageBox.Show($"Bruger oprettet! Dit ID og Adgangskode er {newMember.id}");
             this.Close();
+        }
+
+        private void SaveMemberToFile(Member member) //Metode der gemmer ny medlem i text filen, tager den nye medlem som input -- Sidney
+        {
+            string filePath = @"MemberList.txt"; //Gemmer stien til textfilen
+            string m = $"ID: {member.id}, Navn: {member.name}, Køn: {member.gender}"; //Opretter ny string med medlemmets infomation
+            File.AppendAllText(filePath, Environment.NewLine + m + Environment.NewLine); //Bliver gemt i filen
+
         }
     }
 } 

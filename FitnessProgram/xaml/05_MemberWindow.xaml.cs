@@ -8,7 +8,6 @@ namespace FitnessProgram
 {
     public partial class MemberWindow : Window
     {
-        //private readonly Fitness _fitness; // shared Fitness system
         private readonly Fitness fitness; // Shared fitness system
         private readonly Member member;   // Logged in user
         public List<string> _localList;
