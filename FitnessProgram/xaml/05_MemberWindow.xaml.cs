@@ -55,11 +55,11 @@ namespace FitnessProgram
                     _localList.RemoveAt(memberIndex);
                     //File.WriteAllLines(@"MemberList.txt", localList);
                     ShowMembers();
-                    MessageBox.Show($"{memberID} er blevet slettet!");
+                    MessageBox.Show($"{memberIndex} er blevet slettet!");
                 }
                 else
                 {
-                    MessageBox.Show($"{memberID} findes ikke, prøv igen");
+                    MessageBox.Show($"{memberIndex} findes ikke, prøv igen");
                 }
             }
             else

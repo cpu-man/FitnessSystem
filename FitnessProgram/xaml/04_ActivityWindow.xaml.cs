@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -24,11 +25,11 @@ namespace FitnessProgram
             this.member = member;
 
             ShowActivity();
-            ApplyRoleRestrictions(); // Hide admin controls if not admin
+            ApplyRoleRestrictions(); 
         }
 
-        // Hide admin-only controls
-        private void ApplyRoleRestrictions()
+         
+        private void ApplyRoleRestrictions() // Funktion der gemmmer admin funktioner hvis man ikke er logget ind som admin
         {
             if (member.role.ToLower() != "admin")
             {
@@ -74,7 +75,7 @@ namespace FitnessProgram
         }
 
 
-        // Remove a member from an activity
+        
         private void RemoveMemberFromActivity()
         {
             if (!int.TryParse(EnterActivity.Text, out int activityIndex))
@@ -90,7 +91,6 @@ namespace FitnessProgram
             }
 
             int memberIndex = memberId - 1;
-
             List<string> localMembers = fitness.MemberFromFile();
 
             if (memberIndex < 0 || memberIndex >= localMembers.Count)
@@ -162,13 +162,13 @@ namespace FitnessProgram
             block.FontWeight = FontWeights.Bold;
             block.HorizontalAlignment = HorizontalAlignment.Left;
             block.VerticalAlignment = VerticalAlignment.Top;
-            block.Margin = new Thickness(1002, 130, 0, 0);
+            block.Margin = new Thickness(1030, 130, 0, 0);
             block.TextWrapping = TextWrapping.Wrap;
 
             block.Text = newActName.ToUpper(); //Brugerens input bliver lagt ind i TextBlocken
             ActivityGrid.Children.Add(block);
             MessageBox.Show($"Aktivitet {newActName} oprettet");
+            //File.AppendAllText(@"ActivityList.txt", newActName + Environment.NewLine);
         }
     }
 }
-//Margin="1002,130,0,0"

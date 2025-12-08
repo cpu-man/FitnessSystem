@@ -34,7 +34,7 @@ public class Fitness
     public List<Member> GetAllMembers()
     {
         return memberList;
-    } //=> memberList;
+    } 
 
     // Login - Philip
     public Member Authenticate(string username, string password)
@@ -56,20 +56,19 @@ public class Fitness
         return newMember;
     }
 
-    // SIDNEY MEMBER FILE
 
-    public List<string> MemberFromFile()
+    public List<string> MemberFromFile() //Public metode med liste over medlemmer -- Sidney
     {
-        string filePath = @"MemberList.txt";
-        string[] members = File.ReadAllLines(filePath);
-        return new List<string>(members);
+        string filePath = @"MemberList.txt"; //Gemmer stien til textfilen
+        string[] members = File.ReadAllLines(filePath); //Læser hver linje og laver den til en array af strings
+        return new List<string>(members); //Retunere en ny liste når metoden bliver kaldt
     }
 
-    public List<string> ActivityFromFile()
+    public List<string> ActivityFromFile() //Public metode med en liste over aktiviteter -- Sidney
     {
-        string filePath = @"ActivityList.txt";
-        string[] activities = File.ReadAllLines(filePath);
-        return new List<string>(activities);
+        string filePath = @"ActivityList.txt"; //Gemmer stien til textfilen
+        string[] activities = File.ReadAllLines(filePath); //Læser hver linje og laver den til en array af strings
+        return new List<string>(activities); //Retunerer en ny liste når metoden bliver kaldt
     }
 
     // SIDNEY MEMBER FILE
