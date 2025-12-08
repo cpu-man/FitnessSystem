@@ -40,21 +40,9 @@
               "RelativeDocumentMoniker": "FitnessProgram\\xaml\\04_ActivityWindow.xaml.cs",
               "ToolTip": "C:\\Users\\sidne\\source\\repos\\FitnessSystem\\FitnessProgram\\xaml\\04_ActivityWindow.xaml.cs",
               "RelativeToolTip": "FitnessProgram\\xaml\\04_ActivityWindow.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T11:58:36.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "04_ActivityWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\sidne\\source\\repos\\FitnessSystem\\FitnessProgram\\xaml\\04_ActivityWindow.xaml",
-              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\04_ActivityWindow.xaml",
-              "ToolTip": "C:\\Users\\sidne\\source\\repos\\FitnessSystem\\FitnessProgram\\xaml\\04_ActivityWindow.xaml",
-              "RelativeToolTip": "FitnessProgram\\xaml\\04_ActivityWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-05T11:58:31.257Z",
               "EditorCaption": ""
             },
             {
@@ -67,8 +55,7 @@
               "RelativeToolTip": "FitnessProgram\\xaml\\05_MemberWindow.xaml.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T11:36:12.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T11:36:12.795Z"
             },
             {
               "$type": "Document",
@@ -80,6 +67,24 @@
               "RelativeToolTip": "FitnessProgram\\xaml\\02_NextWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-05T11:10:54.519Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 222,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "04_ActivityWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\sidne\\source\\repos\\FitnessSystem\\FitnessProgram\\xaml\\04_ActivityWindow.xaml",
+              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\04_ActivityWindow.xaml",
+              "ToolTip": "C:\\Users\\sidne\\source\\repos\\FitnessSystem\\FitnessProgram\\xaml\\04_ActivityWindow.xaml",
+              "RelativeToolTip": "FitnessProgram\\xaml\\04_ActivityWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T11:58:31.257Z",
+              "EditorCaption": ""
             }
           ]
         }

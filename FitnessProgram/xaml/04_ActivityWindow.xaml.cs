@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Media;
 
 namespace FitnessProgram
 {
@@ -38,18 +40,18 @@ namespace FitnessProgram
             }
         }
 
-        // Show all activities and members
-        public void ShowActivity()
+      
+        public void ShowActivity() //Oprettelse af aktiviteter
         {
-            List<string> localMembers = fitness.MemberFromFile();
-            List<string> localActivities = fitness.ActivityFromFile();
+            List<string> localMembers = fitness.MemberFromFile(); //Kopi af listen over medlemmer
+            List<string> localActivities = fitness.ActivityFromFile(); //Kopi af listen over aktiviteter
 
             Yoga.Text = localActivities[0].ToUpper() + Environment.NewLine +
                         localMembers[1] + Environment.NewLine +
                         localMembers[3] + Environment.NewLine +
                         localMembers[8] + Environment.NewLine +
                         localMembers[11] + Environment.NewLine +
-                        localMembers[13];
+                        localMembers[13]; //TextBlock hvor der er manuelt er lagt visse medlemmer ind ved brug af indexer fra listen
 
             Boxing.Text = localActivities[1].ToUpper() + Environment.NewLine +
                           localMembers[1] + Environment.NewLine +
@@ -132,17 +134,35 @@ namespace FitnessProgram
         }
 
         // DELETE BUTTON HANDLER
-        private void DeleteActivityButton_Click(object sender, RoutedEventArgs e)
+        private void DeleteActivityButton_Click(object sender, RoutedEventArgs e) //Knap der kører RemoveMemberFromActivity funktionen
         {
             RemoveMemberFromActivity();
         }
 
         // BACK BUTTON HANDLER
-        private void GoToNextWindow_Click(object sender, RoutedEventArgs e)
+        private void GoToNextWindow_Click(object sender, RoutedEventArgs e) //Knap der vender tilbage til hovedmenuen
         {
             NextWindow next = new NextWindow(member, fitness);
             next.Show();
             this.Close();
         }
+
+        private void CreateActivity_Click(object sender, RoutedEventArgs e) //Knap der opretter ny aktivitet
+        {
+            string newActName = NewActivity.Text.Trim(); //Brugerens input bliver sat i ind string der bruges senere
+            TextBlock block = new TextBlock(); //Opretter ny TextBlock med properties
+            Grid.SetRow(block, 1);
+            block.Foreground = Brushes.White;
+            block.FontWeight = FontWeights.Bold;
+            block.HorizontalAlignment = HorizontalAlignment.Left;
+            block.VerticalAlignment = VerticalAlignment.Top;
+            block.Margin = new Thickness(1002, 130, 0, 0);
+            block.TextWrapping = TextWrapping.Wrap;
+
+            block.Text = newActName.ToUpper(); //Brugerens input bliver lagt ind i TextBlocken
+            ActivityGrid.Children.Add(block);
+            MessageBox.Show($"Aktivitet {newActName} oprettet");
+        }
     }
 }
+//Margin="1002,130,0,0"
