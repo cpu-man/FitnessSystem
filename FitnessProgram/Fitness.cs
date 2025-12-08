@@ -71,5 +71,4 @@ public class Fitness
         return new List<string>(activities); //Retunerer en ny liste når metoden bliver kaldt
     }
 
-    // SIDNEY MEMBER FILE
 }

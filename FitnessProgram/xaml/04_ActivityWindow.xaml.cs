@@ -311,22 +311,29 @@ namespace FitnessProgram
         }
 
         // Sidney
-        private void CreateActivity_Click(object sender, RoutedEventArgs e) //Knap der opretter ny aktivitet
+        private void CreateActivity_Click(object sender, RoutedEventArgs e) //Knap der opretter ny aktivitet -- Sidney
         {
             string newActName = NewActivity.Text.Trim(); //Brugerens input bliver sat i ind string der bruges senere
+
+            if (string.IsNullOrEmpty(newActName)) //if statement der kører så længe brugeren ikke skriver noget i TextBoxen
+            {
+                MessageBox.Show("Indtast venligst et navn til aktivitetet");
+                return; //Stopper her og springer resten af koden nedenunder over
+            }
+
             TextBlock block = new TextBlock(); //Opretter ny TextBlock med properties
             Grid.SetRow(block, 1);
             block.Foreground = Brushes.White;
             block.FontWeight = FontWeights.Bold;
             block.HorizontalAlignment = HorizontalAlignment.Left;
             block.VerticalAlignment = VerticalAlignment.Top;
-            block.Margin = new Thickness(1100, 130, 0, 0);
+            block.Margin = new Thickness(1030, 130, 0, 0);
             block.TextWrapping = TextWrapping.Wrap;
 
             block.Text = newActName.ToUpper(); //Brugerens input bliver lagt ind i TextBlocken
             ActivityGrid.Children.Add(block);
             MessageBox.Show($"Aktivitet {newActName} oprettet");
-
+            //File.AppendAllText(@"ActivityList.txt", newActName + Environment.NewLine); Kan bruges til at gemme den nye string ind i text filen 
             UpdateAllCapacities();
         }
     }
