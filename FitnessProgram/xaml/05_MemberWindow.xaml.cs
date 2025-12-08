@@ -8,14 +8,14 @@ namespace FitnessProgram
 {
     public partial class MemberWindow : Window
     {
-        private readonly Fitness _fitness; // shared Fitness system
+        //private readonly Fitness _fitness; // shared Fitness system
         private readonly Fitness fitness; // Shared fitness system
         private readonly Member member;   // Logged in user
         public List<string> _localList;
         public MemberWindow(Fitness fitness, Member member)
         {
             InitializeComponent();
-            _fitness = fitness;
+            //_fitness = fitness;
             this.fitness = fitness;
             this.member = member;
             this._localList = fitness.MemberFromFile().ToList();
@@ -49,33 +49,27 @@ namespace FitnessProgram
         {
             if (int.TryParse(EnterMember.Text, out int memberID))
             {
-                //List<string> localList = _fitness.MemberFromFile();
                 int memberIndex = memberID - 1;
-                //string memberName = localList[memberIndex];
-                var members = _fitness.MemberFromFile();
-                //Fitness fitness = _fitness.MemberFromFile().FirstOrDefault(memberID)
                 if (memberIndex >= 0 && memberIndex < _localList.Count)
                 {
                     _localList.RemoveAt(memberIndex);
-                    //File.WriteAllLines
                     //File.WriteAllLines(@"MemberList.txt", localList);
                     ShowMembers();
                     MessageBox.Show($"{memberID} er blevet slettet!");
                 }
-
+                else
+                {
+                    MessageBox.Show($"{memberID} findes ikke, prøv igen");
+                }
             }
-
             else
-            {
-                MessageBox.Show($"{memberID} findes ikke, prøv igen");
-            }
-
-            //else
             {
                 MessageBox.Show("Indtast venligst et tal");
             }
 
+
         }
+
 
 
         // --- Back button ---

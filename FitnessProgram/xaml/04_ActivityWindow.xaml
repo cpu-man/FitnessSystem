@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessProgram"
         mc:Ignorable="d"
+        d:DesignHeight="1080" 
+        d:DesignWidth="1920"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"
         Title="ActivityWindow" Height="1080" Width="1920">
 
-    <Grid Background="Black">
+    <Grid x:Name="ActivityGrid" Background="Black">
         <!-- Grid layout -->
         <Grid.RowDefinitions>
             <!-- row 0 -->
@@ -29,7 +31,7 @@
         <TextBox   x:Name="EnterActivity" Grid.Row="1"  HorizontalAlignment="Left" Margin="1297,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="4.667,-0.805"/>
         <Button    x:Name="DeleteMemberButton" Grid.Row="1" Height="35" Width="50" Foreground="White" Background="Red" Content="Slet" HorizontalAlignment="Left" Margin="1274,216,0,0" VerticalAlignment="Top" Click="DeleteActivityButton_Click"/>
         <Button x:Name="AddMemberButton" Grid.Row="1" Height="35" Width="50" Content="Tilføj" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="1393,216,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="CreateActivity" Grid.Row="1" Height="34" Width="100" Background="GreenYellow" Content="Opret Aktivitet" HorizontalAlignment="Left" Margin="1307,269,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CreateActivity" Grid.Row="1" Height="34" Width="100" Background="GreenYellow" Content="Opret Aktivitet" HorizontalAlignment="Left" Margin="1307,335,0,0" VerticalAlignment="Top" Click="CreateActivity_Click"/>
         <TextBox x:Name="EnterMember" HorizontalAlignment="Left" Grid.Row="1"  Margin="1297,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <!-- Sidney xaml code -->
 
@@ -46,103 +48,10 @@
         VerticalAlignment="Top" 
         Margin="1307,66,0,0"
         Click="GoToNextWindow_Click"/>
-
-        <!-- USER SECTION: Tilmeld og Frameld -->
-        <Button x:Name="JoinButton"
-        Content="Tilmeld"
-        Width="100"
-        Height="50"
-        Background="LimeGreen"
-        Foreground="Black"
-        Grid.Row="1"
-        Margin="0,0,0,0"
-        HorizontalAlignment="Center"
-        Click="JoinActivity_Click"/>
-
-        <Button x:Name="LeaveButton"
-        Content="Frameld"
-        Width="100"
-        Height="50"
-        Background="OrangeRed"
-        Foreground="White"
-        Grid.Row="1"
-        Margin="0,125,0,0"
-        HorizontalAlignment="Center"
-        Click="LeaveActivity_Click"/>
-
-        <TextBox
-          x:Name="TypeActivityIn"
-            Grid.Row="1"
-            HorizontalAlignment="Left"
-            Width="200"
-            Height="100" 
-            Margin="609,487,0,412"
-            />
-
-        <TextBlock 
-            x:Name="YogaCount" 
-            Grid.Row="1" 
-            Text="0/5 tilmeldt" 
-            FontSize="11" 
-            Width="120" 
-            Height="25" 
-            Foreground="White" 
-            FontWeight="Bold" 
-            HorizontalAlignment="Left" 
-            Margin="50,100,0,0" 
-            VerticalAlignment="Top"/>
+        <TextBox x:Name="NewActivity" HorizontalAlignment="Left" Margin="1297,292,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
 
-        <TextBlock 
-            x:Name="BoxingCount" 
-            Grid.Row="1" 
-            Text="0/5 tilmeldt" 
-            FontSize="11" 
-            Width="120" 
-            Height="25" 
-            Foreground="White" 
-            FontWeight="Bold" 
-            HorizontalAlignment="Left" 
-            Margin="250,100,0,0" 
-            VerticalAlignment="Top"/>
 
-        <TextBlock 
-            x:Name="SpinningCount" 
-            Grid.Row="1" 
-            Text="0/5 tilmeldt" 
-            FontSize="11" Width="120" 
-            Height="25" 
-            Foreground="White" 
-            FontWeight="Bold" 
-            HorizontalAlignment="Left" 
-            Margin="450,100,0,0" 
-            VerticalAlignment="Top"/>
-
-        <TextBlock 
-            x:Name="PilatesCount" 
-            Grid.Row="1" 
-            Text="0/5 tilmeldt" 
-            FontSize="11" 
-            Width="120" 
-            Height="25" 
-            Foreground="White" 
-            FontWeight="Bold" 
-            HorizontalAlignment="Left" 
-            Margin="650,100,0,0" 
-            VerticalAlignment="Top"/>
-
-        <TextBlock 
-            x:Name="CrossfitCount" 
-            Grid.Row="1" 
-            Text="0/5 tilmeldt" 
-            FontSize="11" 
-            Width="120" 
-            Height="25" 
-            Foreground="White" 
-            FontWeight="Bold" 
-            HorizontalAlignment="Left" 
-            Margin="850,100,0,0" 
-            VerticalAlignment="Top"/>
 
         <!-- Philip xaml code -->
 
