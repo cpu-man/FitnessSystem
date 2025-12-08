@@ -154,20 +154,26 @@ namespace FitnessProgram
                 EnterActivity.Visibility = Visibility.Visible;
                 EnterMember.Visibility = Visibility.Visible;
 
-                // Hide user buttons
+                // Hide user buttons FOR ADMIN
                 JoinButton.Visibility = Visibility.Collapsed;
                 LeaveButton.Visibility = Visibility.Collapsed;
                 TypeActivityIn.Visibility = Visibility.Collapsed;
+                MeldDigTilHold.Visibility = Visibility.Collapsed;
             }
             else
             {
-                // Hide admin-only controls
+                // Hide admin-only controls FOR USER
                 DeleteMemberButton.Visibility = Visibility.Collapsed;
                 AddMemberButton.Visibility = Visibility.Collapsed;
                 CreateActivity.Visibility = Visibility.Collapsed;
                 EnterActivity.Visibility = Visibility.Collapsed;
                 EnterMember.Visibility = Visibility.Collapsed;
                 NewActivity.Visibility = Visibility.Collapsed;
+                IndtastMedlemsID.Visibility = Visibility.Collapsed;
+                IndtastNummeretPåHoldet.Visibility = Visibility.Collapsed;
+                IndtastNavnetOpret.Visibility = Visibility.Collapsed;
+
+
 
                 // Show user buttons
                 JoinButton.Visibility = Visibility.Visible;
