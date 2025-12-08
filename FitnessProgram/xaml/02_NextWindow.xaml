@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"
-        Title="NextWindow" Height="1080" Width="1920">
+        Title="NextWindow" Height="1080" Width="1920"
+        Icon="/Icon">
 
     <Grid Background="Black">
 

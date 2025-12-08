@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessProgram"
         mc:Ignorable="d"
-        Title="RegisterWindow" Height="300" Width="400">
+        Title="RegisterWindow" Height="300" Width="400"
+        Icon="/Icon">
+    
     <!--Philip Kode -->
     <Grid Margin="10" Background="Black">
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">

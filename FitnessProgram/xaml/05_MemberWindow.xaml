@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"
-        Title="MemberWindow" Height="1080" Width="1920">
+        Title="MemberWindow" Height="1080" Width="1920"
+        Icon="/Icon">
+    
     <Grid Background="Black">
 
         <!-- Grid row layout -->

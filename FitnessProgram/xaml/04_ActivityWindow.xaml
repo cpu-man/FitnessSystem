@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"
-        Title="ActivityWindow" Height="1080" Width="1920">
+        Title="ActivityWindow" Height="1080" Width="1920"
+        Icon="/Icon">
 
     <Grid x:Name="ActivityGrid" Background="Black">
         <!-- Grid layout -->
