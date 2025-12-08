@@ -331,7 +331,7 @@ namespace FitnessProgram
             UpdateAllCapacities();
         }
 
-        //Medlemer melder sig af aktivitet -- Philip
+        //Medlemer melder sig af aktivitet - Philip
         private void LeaveActivity_Click(object sender, RoutedEventArgs e)
         {
             if (!int.TryParse(TypeActivityIn?.Text, out int activityIndex))
